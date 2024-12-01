@@ -22,7 +22,7 @@ main {
 
 .shopping-card-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   background-color: #e7e7e7;
   border-radius: 10px;
@@ -44,6 +44,7 @@ main {
 }
 .card {
   padding: 5%;
+
 }
 .card-body {
   display: flex;
@@ -65,4 +66,8 @@ main {
 
 .fa-trash-alt {
   color: #de6b5c;
+}
+
+.text-danger {
+  color: red !important;
 }
