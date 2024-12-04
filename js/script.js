@@ -1,17 +1,5 @@
-// const totalprice = document.getElementsByClassName("total");
-// const basketbtninc = document.getElementById("basket+");
-// const basketbtndec = document.getElementById("basket-");
-// const basketsize = document.getElementById("basketsize");
-
-// basketbtninc.addEventListener('onclick', () => {
-//     let value = parseInt(basketsize.textContent, 10);
-//     console.log(basketsize);
-//     basketsize.textContent = value + 1;
-//     console.log(basketsize);
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
-    // Function to update total price
+  
     function updateTotal() {
       let total = 0;
       document.querySelectorAll('.card-body').forEach((product) => {
@@ -22,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('.total').textContent = `${total} $`;
     }
   
-    // Handling "+" and "-" buttons
+   
     document.querySelectorAll('.card-body').forEach((product) => {
       const plusBtn = product.querySelector('.fa-plus-circle');
       const minusBtn = product.querySelector('.fa-minus-circle');
@@ -41,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-    // Handling item deletion
+ 
     document.querySelectorAll('.fa-trash-alt').forEach((trashBtn) => {
       trashBtn.addEventListener('click', (e) => {
         const productCard = e.target.closest('.card-body');
@@ -50,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   
-    // Handling "like" button toggle
+    
     document.querySelectorAll('.fa-heart').forEach((heartBtn) => {
       heartBtn.addEventListener('click', () => {
         heartBtn.classList.toggle('text-danger');
