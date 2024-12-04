@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.card-body').forEach((product) => {
         const quantity = parseInt(product.querySelector('.quantity').textContent, 10);
         const unitPrice = parseInt(product.querySelector('.unit-price').textContent, 10);
-        total += quantity * unitPrice;
+        total += quantity * unitPrice /2;
       });
       document.querySelector('.total').textContent = `${total} $`;
     }
